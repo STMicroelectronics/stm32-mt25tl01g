@@ -84,7 +84,7 @@ int32_t MT25TL01G_Enter4BytesAddressMode(QSPI_HandleTypeDef *Ctx, MT25TL01G_Inte
   }
 
   /* Configure automatic polling mode to wait the memory is ready */
-  else if(MT25TL01G_AutoPollingMemReady(Ctx,Mode)!=MT25TL01G_OK)
+  else if(MT25TL01G_AutoPollingMemReady(Ctx,MT25TL01G_QPI_MODE)!=MT25TL01G_OK)
   {
     return MT25TL01G_ERROR_COMMAND;
   }
